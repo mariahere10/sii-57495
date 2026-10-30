@@ -139,6 +139,10 @@ void CMundo::OnTimer(int value)
 		esfera.velocidad.x=2+2*rand()/(float)RAND_MAX;
 		esfera.velocidad.y=2+2*rand()/(float)RAND_MAX;
 		puntos2++;
+		
+		char cad[100];
+		sprintf(cad,"Jugador 2 marca 1 punto, lleva un total de %d puntos.\n",puntos2);
+		write (fd,cad,strlen(cad));
 	}
 
 	if(fondo_dcho.Rebota(esfera))
@@ -148,6 +152,10 @@ void CMundo::OnTimer(int value)
 		esfera.velocidad.x=-2-2*rand()/(float)RAND_MAX;
 		esfera.velocidad.y=-2-2*rand()/(float)RAND_MAX;
 		puntos1++;
+		
+		char cad[100];
+		sprintf(cad,"Jugador 1 marca 1 punto, lleva un total de %d puntos.\n",puntos1);
+		write (fd,cad,strlen(cad));
 	}
 
 }
