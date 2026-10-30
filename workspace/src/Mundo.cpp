@@ -143,6 +143,8 @@ void CMundo::OnTimer(int value)
 		char cad[100];
 		sprintf(cad,"Jugador 2 marca 1 punto, lleva un total de %d puntos.\n",puntos2);
 		write (fd,cad,strlen(cad));
+		
+		if(puntos2 == 3) exit (0);
 	}
 
 	if(fondo_dcho.Rebota(esfera))
@@ -156,6 +158,8 @@ void CMundo::OnTimer(int value)
 		char cad[100];
 		sprintf(cad,"Jugador 1 marca 1 punto, lleva un total de %d puntos.\n",puntos1);
 		write (fd,cad,strlen(cad));
+		
+		if(puntos2 == 3) exit (0);
 	}
 
 }
