@@ -18,7 +18,7 @@ int main(int argc, char **argv) {
         perror("No puede crearse el FIFO");
         return(1);
     }
-    fd = open(fd,"FIFO_LOGGER",O_RDONLY)
+    fd = open("FIFO_LOGGER",O_RDONLY);
     /* Abrir el FIFO */
     if (fd == -1) {
         perror("No puede abrirse el FIFO");
