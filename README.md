@@ -11,11 +11,16 @@
 
 ## 📖 Descripción
 
-Este repositorio contiene el avance  en las prácticas de la asignatura **Sistemas Informáticos Industriales**, incluyendo el codigo de la practica 1.
+Este repositorio contiene el avance  en las prácticas de la asignatura **Sistemas Informáticos Industriales**, modificando los distintos archivos para superar los objetivos previstos para cada práctica.
 
 
 
 ---
+##Practica 2
+Nuevo programa 'logger', que crea una tuberia con nombre (FIFO) y muestra por pantalla los puntos que marca cada jugador
+El juego tenis envia por la FIFO un mensaje cada vez que un jugador marca un punto
+Orden de ejecucion: primero './logger' y despues './tenis'.
+Tanto el juego como el logger terminan cuando un jugador alcanza 3 puntos.
 
 ## Estudiante 
 Maria Heredero Diezma
