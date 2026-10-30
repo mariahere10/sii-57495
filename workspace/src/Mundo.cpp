@@ -9,6 +9,10 @@
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <sys/types.h>
+#include <sys/stat.h>
 
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
@@ -21,7 +25,7 @@ CMundo::CMundo()
 
 CMundo::~CMundo()
 {
-
+	close (fd);
 }
 
 void CMundo::InitGL()
@@ -164,6 +168,7 @@ void CMundo::OnKeyboardDown(unsigned char key, int x, int y)
 
 void CMundo::Init()
 {
+	fd = open("FIFO_LOGGER", O_WRONLY);
 	//puntos1 = 0;
 	//puntos2 = 0;
 	Plano p;
