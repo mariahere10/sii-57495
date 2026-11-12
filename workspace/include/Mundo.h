@@ -39,7 +39,7 @@ public:
 	int puntos2;
 	
 	int fd; //nombre del descriptor de la tuberia para el mundo.cpp
-	DatosMemCompartida *pdatos;
+	DatosMemCompartida *pdatos; //nombre del puntero a los daros de memoria compartida 
 };
 
 #endif // !defined(AFX_MUNDO_H__9510340A_3D75_485F_93DC_302A43B8039A__INCLUDED_)
